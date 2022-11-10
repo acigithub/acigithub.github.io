@@ -1,0 +1,102 @@
+/* balise */
+
+p {
+    /* propriété : valeur */
+    /* en Helvetica, si pas disponible en Arial, et si pas disponible en Comic Sans MS, ... */
+    font-family: Helvetica, Arial, "Comic Sans MS", sans-serif;
+}
+
+body {
+    background-image: url("images/astres.jpg");
+    color: white;
+    font-family: "Comic Sans MS", Arial, serif;
+}
+
+h1,
+h2 {
+    color: darkcyan;
+    font-family: Verdana, "Comic Sans MS", Arial, serif;
+}
+
+h3 {
+    /* italique */
+    font-style: italic;
+    /* souligné */
+    text-decoration: underline;
+    /* couleur RGB (0 à 255 pour rouge, vert et bleu) */
+    color: rgb(0, 102, 0);
+}
+
+h4 {
+    /* ligne au-dessus */
+    text-decoration: overline;
+}
+
+h5 {
+    /* barré */
+    text-decoration: line-through;
+}
+
+div {
+    /* texte aligné */
+    text-align: center;
+}
+
+ul,
+ol {
+    display: inline-block;
+    padding-left: 0;
+    text-align: left;
+}
+
+#p1 {
+    /* gras */
+    font-weight: bold;
+    /* texte encadré */
+    border: 2px white solid;
+    display: inline-block;
+    /* couleur en hexadécimal */
+    color: #66b2ff;
+    /*width: 50%;*/
+}
+
+
+/* Définition d'une classe */
+
+.en_rouge {
+    color: red;
+    font-style: oblique;
+}
+
+a {
+    color: white;
+}
+
+
+/* Lorsque le pointeur de souris est sur un lien */
+
+a:hover {
+    font-style: italic;
+}
+
+
+/* Lorsque l'on clique sur le lien */
+
+a:active {
+    border: 2px white solid;
+}
+
+
+/* Lorsque le lien a été cliqué */
+
+a:focus {
+    color: yellow;
+}
+
+
+/* Lorsque le lien a déjà été visité */
+
+
+/*a:visited {
+    color: gray;
+}*/

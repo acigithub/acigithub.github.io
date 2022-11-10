@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Ma première page</title>
+    <meta charset="UTF-8" />
+    <!-- Lien vers le fichier CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div>
+        <!-- id pour un endroit unique dans la page -->
+        <p id="haut_page">Début de page</p>
+    </div>
+    <!-- Texte du body
+            Démo paragraphes, titres, ...
+        -->
+    <h1>Titre niveau 1</h1>
+    <h2>Titre niveau 2</h2>
+    <h3>Titre niveau 3</h3>
+    <!-- Mise en forme par classe définie dans CSS -->
+    <h4 class="en_rouge">Titre niveau 4</h4>
+    <h5>Titre niveau 5</h5>
+    <h6>Titre niveau 6</h6>
+    <section>
+        <p id="p1">
+            <em>1ère ligne 1er paragraphe</em><br/>
+            <i>2ème ligne 1er paragraphe</i>
+        </p>
+    </section>
+    <p id="p2">
+        <strong>1ère ligne 2ème paragraphe</strong><br/>
+        <mark>2ème ligne 2ème paragraphe</mark>
+    </p>
+    <div>
+        <ul>
+            <li class="en_rouge">Element 1 liste 1</li>
+            <li>Element 2 liste 1</li>
+            <li>Element 3 liste 1</li>
+        </ul>
+    </div>
+    <div>
+        <ol>
+            <!-- Mise en forme d'un élement à l'intérieur d'une balise par span -->
+            <li>Element 1 <span class="en_rouge">liste</span> 2</li>
+            <li>Element 2 liste 2</li>
+            <li>Element 3 liste 2</li>
+            <li>Element 4 liste 2</li>
+        </ol>
+    </div>
+    <div>
+        <a href="https://www.w3schools.com">
+            <img src="./images/logo-html5-css3.png" alt="Texte alternatif logo html/css" title="Logo html/css" height="157px" width="300px" />
+        </a>
+        <figure>
+            <img src="./images/logo-html5-css3.png" alt="Texte alternatif logo html/css" title="Logo html/css" height="10%" width="20%" />
+            <figcaption class="en_rouge">Légende logo html/css</figcaption>
+        </figure>
+    </div>
+    <div>
+        <!-- 1 seule source possible pour l'audio. Controls pour le navigateur affiche un player -->
+        <audio src="https://lasonotheque.org/UPLOAD/mp3/0100.mp3" controls>
+            Format audio non pris en charge !
+        </audio>
+        <!-- plusieurs sources possibles pour l'audio dans l'ordre indiqué -->
+        <audio controls loop>Formats audio non pris en charge !
+            <source src="https://lasonotheque.org/UPLOAD/mp3/0267.mp3">
+            <source src="https://lasonotheque.org/UPLOAD/mp3/0267.ogg">
+        </audio>
+    </div>
+    <div style="text-align: right;">
+        <!-- https://pixabay.com/videos/mountains-fog-clouds-sunset-59291/ -->
+        <video src="videos/Mountains.mp4" controls width="640" height="360">
+            Format vidéo non pris en charge !
+        </video>
+    </div>
+    <iframe width="944" height="531" src="https://www.youtube.com/embed/6hCGTJCo_Uo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+    </iframe>
+    <nav>
+        <ul>
+            <li><a href="https://www.lilo.org/" style="color: red">Recherche sur Lilo dans même onglet</a></li>
+            <li><a href="https://www.lilo.org/" title="Recherche Lilo" target="_blank">
+                Recherche sur Lilo dans nouvel onglet avec info-bulle
+            </a></li>
+            <li><a href="./images/logo-html5-css3.png" target="_blank">Logo html/css du sous-répertoire images</a></li>
+            <li><a href="http://www.pierre-giraud.com/html-css/cours-complet/imgs/logo-html5-css3.png" target="_blank">Logo html/css du site</a></li>
+            <li><a href="https://wampserver.aviatechno.net/files/vcpackages/all_vc_redist_x86_x64.zip">Téléchargement zip</a></li>
+            <li><a href="http://projet.eu.org/pedago/sin/ICN/2nde/1-html_css.pdf">Téléchargement pdf</a></li>
+            <!--<li><a href="pdf/1-html_css.pdf">Téléchargement pdf</a></li>-->
+        </ul>
+    </nav>
+    <footer>
+        <a href="mailto:contact@mysite.fr?subject=Sujet de l'e-mail&body=Corps de l'e-mail">Me contacter par e-mail</a><br/>
+        <a href="page1.html#p2">Aller en début de page</a>
+    </footer>
+</body>
+
+</html>
